@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="../script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body onload="preencheMenu()">
+    <div class="container my-3 p-3 bg-info">
+        <div class="row text-start">
+            <div class="col"><a href="index.html"><button class="btn btn-outline-light"><i class="bi bi-arrow-return-left"></i></button></a></div>
+        </div>
+
+        <div class="row text-center mb-3"><h1>Produtos</h1></div>
+
+        <div class="row mb-3">
+            <label for="segmento" class="col-2 col-form-label text-end">Filtro</label>
+            <div class="col-8 align-middle text-start">
+                <select name="segmento" id="segmento" class="form-select" onchange="preencheMenu()">
+                    <option value="0" selected>Todos os segmentos</option>
+                    <option value="1">Celulares</option>
+                    <option value="2">Notebooks</option>
+                    <option value="3">TVs</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label for="filtronome" class="col-2 col-form-label text-end">Pesquisar</label>
+            <div class="col-8 align-middle text-start"><input type="text" class="form-control" placeholder="Informe o nome a ser pesquisado" id="filtronome" onkeypress="pegaTecla(event)"></div>
+            <div class="col align-middle">
+                <button class="btn btn-outline-light" onclick="preencheMenu()"><i class="bi bi-search"></i></button>
+            </div>
+        </div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Descrição</th>
+                    <th>Preço</th>
+                    <th>Segmento</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody id="linhasmenu"></tbody>
+        </table>
+    </div>
+
+
+</body>
+</html>

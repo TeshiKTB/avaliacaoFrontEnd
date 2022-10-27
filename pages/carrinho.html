@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="../script.js"></script>
+
+    <style>
+        .w-15 {
+            width: 15%;
+        }
+
+        .mybtn {
+            background-color: transparent;
+            border-color: black;
+        }
+        .mybtn:focus {
+            background-color: transparent;
+        }
+    </style>
+
+</head>
+<body onload="preencheCarrinho()">
+    <div class="container my-3 p-3 bg-info">
+        <div class="row text-start">
+            <div class="col"><a href="index.html"><button class="btn btn-outline-light"><i class="bi bi-arrow-return-left"></i></button></a></div>
+        </div>
+
+        <div class="row text-center"><h1>Carrinho</h1></div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Descrição</th>
+                    <th>Preço</th>
+                    <th>Quantidade</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody id="linhascarrinho"></tbody>
+        </table>
+
+        <div class="row">
+            <div class="col text-end" id="divvalor"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="../script.js"></script>
+</head>
+<body onload="preencheTabela()">
+    <div class="container my-3 p-3 bg-primary bg-gradient">
+        <div class="row mb-3">
+            <div class="col text-start">
+                <a href="carrinho.html"><button class="btn btn-outline-light">Carrinho <i class="bi bi-cart"></i></button></a>
+            </div>
+            <div class="col text-end">
+                <a href="menu.html"><button class="btn btn-outline-light">Menu <i class="bi bi-menu-button"></i></button></a>
+            </div>
+        </div>
+        <div class="row text-center">
+            <h1>Página inicial</h1>
+        </div>
+
+        <div class="row text-start"><h2>Alguns produtos</h2></div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Descrição</th>
+                    <th>Preço</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody id="linhastabela"></tbody>
+        </table>
+    </div>
+</body>
+</html>
