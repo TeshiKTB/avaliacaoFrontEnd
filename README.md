@@ -8,4 +8,4 @@ Este projeto foi feito com as tecnologias HTML, CSS, JavaScript e Bootstrap 5. O
 * É possível adicionar um produto no carrinho se, e somente se, houver estoque disponível;
 * A página carrinho exibe os itens adicionados no carrinho (se houver) e a quantidade que foi adicionada, além de exibir a soma total dos preços dos itens;
 * Na página carrinho, é possível alterar a quantidade de um item no carrinho ou removê-lo deste;
-* É possível navegar entre as páginas pelos botões localizados na parte superior de cada págica
+* É possível navegar entre as páginas pelos botões localizados na parte superior de cada página.
